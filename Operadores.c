@@ -1,5 +1,5 @@
 #include <stdio.h>
-    int main()
+    int main(){
     /*
     Soma (+)
     Subtração (-)
@@ -27,8 +27,9 @@
     //operação divisão
     divisao = numero1 / numero2;
 
-    printf("A soma é: "%d" \n", soma);
-    printf("A subtração é: "%d"\n", subtracao);  
-    printf("A multiplicação é: "%d" \n", multiplicacao);
-    printf("A divisão é: "%d"\n", divisao);
-
+    printf("A soma é: %d\n", soma);
+    printf("A subtração é: %d\n", subtracao);  
+    printf("A multiplicação é: %d\n", multiplicacao);
+    printf("A divisão é: %d\n", divisao);
+    }
+    
