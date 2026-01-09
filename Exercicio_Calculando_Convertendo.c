@@ -24,7 +24,7 @@ scanf("%d",&nota3);
 
 
 
-printf("A média final do aluno é: %d\n", media);
+printf("A média final do aluno é: %.2f\n", media);
 printf("O status final do aluno é: %s\n", status);
 
 }
