@@ -1,14 +1,11 @@
 #include <stdio.h>
 
 int main(){
-    int numero1, numero2;
+    int idade = 20
 
-    numero1 = 10;
-    numero2 = 5; 
+    if(idade >= 18) 
+        printf ("maior de idade");
+
+        printf("Fora IF");
     
-    if(numer1 > numero2) {
-        printf ("Número 1 é maior que número 2.");
-
-
-    }
 }
