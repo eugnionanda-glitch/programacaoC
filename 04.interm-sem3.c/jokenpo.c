@@ -11,7 +11,7 @@ int main(){
     printf("1. Pedra\n");
     printf("2. Papel\n");
     printf("3. Tesoura\n\n");
-    printf("Digite o número de sua escolha: \n\n");
+    printf("Digite o número de sua escolha: ");
     scanf("%d", &escolhaJogador);
 
     escolhaComputador = rand() % 3 + 1;
@@ -19,16 +19,16 @@ int main(){
     switch (escolhaJogador)
     {
     case 1:
-        printf("Jogador: Pedra - ");
+        printf("\nJogador: Pedra - ");
         break;
     case 2:
-        printf("Jogador: Papel - ");
+        printf("\nJogador: Papel - ");
         break;
     case 3:
-        printf("Jogador: Tesoura - ");
+        printf("\nJogador: Tesoura - ");
         break;
     default:
-        printf("Opção inválida\n");
+        printf("\nOpção inválida\n");
         break;
     }
 
@@ -47,12 +47,12 @@ int main(){
 
     if (escolhaComputador == escolhaJogador)
     {
-        printf("\n### EMPATE ###\n");
+        printf("\n### EMPATE ###\n\n\n\n\n\n\n");
     } else if   ((escolhaJogador == 1) && (escolhaComputador == 3) ||
                 (escolhaJogador == 2) && (escolhaComputador == 1) ||
                 (escolhaJogador == 3) && (escolhaComputador == 2))
-    {   printf ("\n### PARABÉNS, VOCÊ GANHOU! ###\n");
+    {   printf ("\n### PARABÉNS, VOCÊ GANHOU! ###\n\n\n\n\n\n\n");
     } else {
-        printf ("\n### VOCÊ PERDEU! ###\n");
+        printf ("\n### VOCÊ PERDEU! ###\n\n\n\n\n\n\n");
     }
 }
