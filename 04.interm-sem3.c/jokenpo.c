@@ -6,32 +6,53 @@ int main(){
     int escolhaJogador, escolhaComputador;
     srand(time(0));
 
-    printf("JOGO DE JOKENPÔ\n");
-    printf("Escolha uma opção\n");
+    printf("## JOGO DE JOKENPÔ ##\n\n");
+    printf("Escolha uma opção:\n");
     printf("1. Pedra\n");
     printf("2. Papel\n");
-    printf("3. Tesoura\n");
-    printf("Escolha: ");
+    printf("3. Tesoura\n\n");
+    printf("Digite o número de sua escolha: \n\n");
     scanf("%d", &escolhaJogador);
 
-    if (escolhaJogador == escolhaComputador);
+    escolhaComputador = rand() % 3 + 1;
+       
+    switch (escolhaJogador)
     {
-        printf("Parabéns, você venceu ao escolher %d\n", escolhaJogador);
-        printf("A escolha do seu adversário foi: %d\n", escolhaComputador);
-    } else {
-        printf("Não foi dessa vez! Você perdeu ao escolher %d\n", escolhaJogador);
-        printf("A escolha do seu adversário foi: %d\n", escolhaComputador);
-    }
-      
-    
-    switch (escolhaJogador == escolhaComputador)
-    {
-    case constant expression:
-        /* code */
+    case 1:
+        printf("Jogador: Pedra - ");
         break;
-    
+    case 2:
+        printf("Jogador: Papel - ");
+        break;
+    case 3:
+        printf("Jogador: Tesoura - ");
+        break;
     default:
+        printf("Opção inválida\n");
         break;
     }
 
+        switch (escolhaComputador)
+    {
+    case 1:
+        printf("Computador: Pedra\n");
+        break;
+    case 2:
+        printf("Computador: Papel\n");
+        break;
+    case 3:
+        printf("Computador: Tesoura\n");
+        break;
+    }
+
+    if (escolhaComputador == escolhaJogador)
+    {
+        printf("\n### EMPATE ###\n");
+    } else if   ((escolhaJogador == 1) && (escolhaComputador == 3) ||
+                (escolhaJogador == 2) && (escolhaComputador == 1) ||
+                (escolhaJogador == 3) && (escolhaComputador == 2))
+    {   printf ("\n### PARABÉNS, VOCÊ GANHOU! ###\n");
+    } else {
+        printf ("\n### VOCÊ PERDEU! ###\n");
+    }
 }
